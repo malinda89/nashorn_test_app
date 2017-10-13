@@ -9,7 +9,7 @@ public class Main {
         ScriptEngine engine = new ScriptEngineManager().getEngineByName("nashorn");
         try {
             // Read script file
-            engine.eval(new FileReader("test_script.js"));
+            engine.eval(new FileReader("rules_script.js"));
             // Script functions are called using the 'invokeFunction' in Invocable interface
             Invocable invocable = (Invocable)engine;
 
